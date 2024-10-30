@@ -95,6 +95,15 @@ public class MovieController {
     return movieService.getMoviesEarliestByDate(pageable);
   }
 
+  @GetMapping("/list/movieStartDate") // 개봉일 기준 목록 조회
+  public Page<MovieDTO> getMovieStartDates(
+      @RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "10") int size)
+      throws Exception {
+
+    Pageable pageable = PageRequest.of(page - 1, size);
+    return movieService.getMoviesByStartDate(pageable);
+  }
+
   @PreAuthorize("hasRole('ROLE_ADMIN')")
   @PutMapping("/{movieNum}") // 영화 수정
   public ResponseEntity<Void> modifyMovie(
