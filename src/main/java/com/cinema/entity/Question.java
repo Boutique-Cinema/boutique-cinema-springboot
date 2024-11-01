@@ -1,4 +1,4 @@
-package com.cinema.domain;
+package com.cinema.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;

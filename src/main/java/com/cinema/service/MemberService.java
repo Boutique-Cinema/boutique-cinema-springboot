@@ -1,14 +1,13 @@
 package com.cinema.service;
 
-import com.cinema.domain.Member;
+import com.cinema.dto.member.CheckToResetPasswordDTO;
 import com.cinema.dto.member.FindIdDTO;
 import com.cinema.dto.member.MemberJoinDTO;
-import com.cinema.dto.member.CheckToResetPasswordDTO;
 import com.cinema.dto.member.ResetPasswordDTO;
+import com.cinema.entity.Member;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
 
 @Service
 public interface MemberService {

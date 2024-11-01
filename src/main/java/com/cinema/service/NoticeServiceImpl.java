@@ -1,16 +1,16 @@
 package com.cinema.service;
 
 
-import com.cinema.domain.Notice;
 import com.cinema.dto.movie.NoticeDTO;
+import com.cinema.entity.Notice;
 import com.cinema.repository.NoticeRepository;
+import java.time.LocalDate;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import java.time.LocalDate;
 
 @Service
 @Transactional

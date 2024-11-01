@@ -1,10 +1,10 @@
 package com.cinema.service;
 
-import com.cinema.domain.Member;
-import com.cinema.domain.Movie;
-import com.cinema.domain.Reservation;
 import com.cinema.dto.reservation.ReservationDTO;
 import com.cinema.dto.reservation.ReviewDTO;
+import com.cinema.entity.Member;
+import com.cinema.entity.Movie;
+import com.cinema.entity.Reservation;
 import com.cinema.repository.MemberRepository;
 import com.cinema.repository.MovieRepository;
 import com.cinema.repository.ReservationRepository;

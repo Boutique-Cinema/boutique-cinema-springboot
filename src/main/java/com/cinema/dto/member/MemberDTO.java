@@ -1,18 +1,16 @@
 package com.cinema.dto.member;
 
 
-import com.cinema.domain.MemberRole;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
 
 @Getter
 @Setter

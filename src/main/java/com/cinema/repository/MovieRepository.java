@@ -1,6 +1,6 @@
 package com.cinema.repository;
 
-import com.cinema.domain.Movie;
+import com.cinema.entity.Movie;
 import java.time.LocalDate;
 import java.util.List;
 import org.springframework.data.domain.Page;

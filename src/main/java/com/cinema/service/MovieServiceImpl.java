@@ -1,7 +1,7 @@
 package com.cinema.service;
 
-import com.cinema.domain.Movie;
 import com.cinema.dto.movie.MovieDTO;
+import com.cinema.entity.Movie;
 import com.cinema.repository.MovieRepository;
 import jakarta.transaction.Transactional;
 import java.time.LocalDate;
