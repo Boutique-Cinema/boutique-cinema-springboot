@@ -38,7 +38,6 @@ public class QuestionController {
   public ResponseEntity<Void> modify(
       @PathVariable Long qNum, @ModelAttribute QuestionDTO questionDTO) throws Exception {
 
-    // 질문 수정
     questionDTO.setQNum(qNum); // DTO에 ID 세팅
     questionService.modify(questionDTO);
     return ResponseEntity.noContent().build();

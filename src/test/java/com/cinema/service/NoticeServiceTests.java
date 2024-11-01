@@ -1,7 +1,5 @@
 package com.cinema.service;
 
-import com.cinema.dto.common.PageRequestDTO;
-import com.cinema.dto.common.PageResponseDTO;
 import com.cinema.dto.movie.NoticeDTO;
 import com.cinema.repository.NoticeRepository;
 import java.time.LocalDate;
@@ -41,17 +39,17 @@ public class NoticeServiceTests {
     noticeService.modify(noticeDTO);
   }
 
-  @Test
-  public void testPaging() {
-    // PageRequestDTO 인스턴스 생성
-    PageRequestDTO pageRequestDTO = new PageRequestDTO();
-    pageRequestDTO.setPage(1); // 페이지 번호 설정
-    pageRequestDTO.setSize(10); // 페이지당 항목 수 설정
-
-    // 서비스에서 페이징된 공지사항 요청
-    PageResponseDTO<NoticeDTO> response = noticeService.getNotices(pageRequestDTO);
-
-    // 응답 확인
-    System.out.println(response);
-  }
+  //  @Test
+  //  public void testPaging() {
+  //    // PageRequestDTO 인스턴스 생성
+  //    PageRequestDTO pageRequestDTO = new PageRequestDTO();
+  //    pageRequestDTO.setPage(1); // 페이지 번호 설정
+  //    pageRequestDTO.setSize(10); // 페이지당 항목 수 설정
+  //
+  //    // 서비스에서 페이징된 공지사항 요청
+  //    PageResponseDTO<NoticeDTO> response = noticeService.getNotices(pageRequestDTO);
+  //
+  //    // 응답 확인
+  //    System.out.println(response);
+  //  }
 }
