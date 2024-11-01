@@ -1,10 +1,10 @@
 package com.cinema.controller;
 
-import com.cinema.domain.Member;
+import com.cinema.dto.member.CheckToResetPasswordDTO;
 import com.cinema.dto.member.FindIdDTO;
 import com.cinema.dto.member.MemberJoinDTO;
-import com.cinema.dto.member.CheckToResetPasswordDTO;
 import com.cinema.dto.member.ResetPasswordDTO;
+import com.cinema.entity.Member;
 import com.cinema.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -13,7 +13,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
 
 @RestController
 @RequiredArgsConstructor

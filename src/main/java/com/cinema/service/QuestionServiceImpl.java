@@ -1,8 +1,8 @@
 package com.cinema.service;
 
-import com.cinema.domain.Member;
-import com.cinema.domain.Question;
 import com.cinema.dto.qna.QuestionDTO;
+import com.cinema.entity.Member;
+import com.cinema.entity.Question;
 import com.cinema.repository.MemberRepository;
 import com.cinema.repository.QuestionRepository;
 import jakarta.transaction.Transactional;

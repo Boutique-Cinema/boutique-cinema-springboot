@@ -1,12 +1,10 @@
-package com.cinema.domain;
+package com.cinema.entity;
 
 
 import jakarta.persistence.*;
+import java.time.LocalDate;
 import lombok.*;
 import org.antlr.v4.runtime.misc.NotNull;
-
-import java.time.LocalDate;
-
 
 @Entity
 @SequenceGenerator(name ="NOTICE_SEQ_GEN",

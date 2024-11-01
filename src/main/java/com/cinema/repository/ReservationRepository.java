@@ -1,6 +1,6 @@
 package com.cinema.repository;
 
-import com.cinema.domain.Reservation;
+import com.cinema.entity.Reservation;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
